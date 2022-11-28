@@ -1,7 +1,8 @@
 import requests, sys, argparse, validators, os, tldextract
 from colorama import init, Fore, Style
 from pyfiglet import Figlet
-
+from requests.packages.urllib3.exceptions import InsecureRequestWarning
+requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 # INITIALISE COLORAMA
 init()
 
